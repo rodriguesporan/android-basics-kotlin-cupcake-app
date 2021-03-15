@@ -141,6 +141,16 @@
                 android:text="@string/send"
                 android:onClick="@{() -> summaryFragment.sendOrder()}"/>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel_button"
+                android:text="@string/cancel"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:onClick="@{() -> summaryFragment.cancelOrder()}"
+                />
+
         </LinearLayout>
     </ScrollView>
 </layout>

@@ -70,7 +70,7 @@ class OrderViewModel: ViewModel() {
 
     fun hasNoFlavorSet(): Boolean = _flavor.value.isNullOrEmpty()
 
-    private fun resetOrder() {
+    fun resetOrder() {
         _quantity.value = 0
         _price.value = 0.0
         _flavor.value = ""
